@@ -3,103 +3,166 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Website</title>
+    <title>Indian Dance Encyclopedia</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
-        /* Custom CSS for Hero Section */
+        body {
+            background-image: url('images/360_F_126288652_QJQgPJWpGNN6RAJCtlRo6cMtjXOWq367.jpg'); 
+            background-size: cover;         
+            background-position: center;    
+            background-repeat: no-repeat;  
+            color: white;                   
+        }
+
         .hero-section {
-            background-image: url('images/f752397e16fd79df58ad726923c84eb6.gif')!important; 
+            background-image: url('images/f752397e16fd79df58ad726923c84eb6.gif') !important;
             background-size: cover;
             background-position: center;
             color: white;
             text-align: center;
-            padding: 100px 0; /* Adjust the padding as needed */
+            padding: 100px 0;
+        }
+
+        .card {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+
+        .card-body {
+            flex-grow: 1; 
+        }
+
+        .container {
+            padding: 50px;
+        }
+
+        .card-body p, 
+        .card-body h5, 
+        .card-body a {
+            color: black !important;
+        }
+
+        .text-center {
+            color: black !important;
+        }
+
+        .form-label,
+        .form-control {
+            color: black !important;
         }
     </style>
 </head>
 <body>
 
-    <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">Your Brand</a>
+        <a class="navbar-brand" href="index.html">Indian Dance Encyclopedia</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Home</a>
+                    <a class="nav-link" href="index.html">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
+                    <a class="nav-link" href="about.html">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Classical Dances</a>
+                    <a class="nav-link" href="classical-dances.html">Classical Dances</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Folk Regional Dances</a>
+                    <a class="nav-link" href="folk-dances.html">Folk Dances</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Gallery</a>
+                    <a class="nav-link" href="faq.html">FAQ</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Interactive Map</a>
+                    <a class="nav-link" href="map.html">Map</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Contact Us</a>
+                    <a class="nav-link" href="contact.html">Contact Us</a>
                 </li>
             </ul>
         </div>
     </nav>
 
-    <!-- Hero Section with Background Image -->
     <header class="hero-section">
         <h1>Indian Dance Encyclopedia</h1>
         <p>Exploring the world of various Indian dance styles</p>
     </header>
 
-    <!-- Main Content -->
     <div class="container my-5">
+        <h2 class="text-center mb-4">Explore Our Dance Sections</h2>
         <div class="row">
-            <div class="col-md-4">
+            <div class="col-md-4 mb-4">
                 <div class="card">
-                    <img src="images/your-image.jpg" class="card-img-top" alt="Image">
+                    <img src="images/bharatanatyam.jpg" class="card-img-top" alt="Classical Dances">
                     <div class="card-body">
-                        <h5 class="card-title">Card Title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Learn More</a>
+                        <h5 class="card-title">Classical Dances</h5>
+                        <p class="card-text">Learn about the traditional and ancient dance forms of India such as Bharatanatyam, Kathak, and Odissi.</p>
+                        <a href="classical-dances.html" class="btn btn-primary">Learn More</a>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
+
+            <div class="col-md-4 mb-4">
                 <div class="card">
-                    <img src="images/your-image.jpg" class="card-img-top" alt="Image">
+                    <img src="images/bhangra.jpg" class="card-img-top" alt="Folk Dances">
                     <div class="card-body">
-                        <h5 class="card-title">Card Title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Learn More</a>
+                        <h5 class="card-title">Folk Dances</h5>
+                        <p class="card-text">Explore the vibrant folk dance traditions from different regions of India like Garba, Bhangra, and Ghoomar.</p>
+                        <a href="folk-dances.html" class="btn btn-primary">Learn More</a>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
+
+            <div class="col-md-4 mb-4">
                 <div class="card">
-                    <img src="images/your-image.jpg" class="card-img-top" alt="Image">
+                    <img src="images/ezgif-6-52bf1f2c21.png" class="card-img-top" alt="Map">
                     <div class="card-body">
-                        <h5 class="card-title">Card Title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Learn More</a>
+                        <h5 class="card-title">Map</h5>
+                        <p class="card-text">Discover the locations of various Indian dance forms across the country through our map.</p>
+                        <a href="map.html" class="btn btn-primary">Learn More</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Footer -->
+    <div class="container my-5">
+        <h2 class="text-center mb-4">Contact Us</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <form>
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="subject" class="form-label">Subject</label>
+                        <input type="text" class="form-control" id="subject" placeholder="Enter the subject" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea class="form-control" id="message" rows="5" placeholder="Enter your message" required></textarea>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
     <footer class="bg-dark text-white text-center py-4">
-        <p>&copy; 2024 Your Website. All rights reserved.</p>
+        <p>&copy; 2024 Indian Dance Encyclopedia. All rights reserved.</p>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
-
